@@ -34,7 +34,7 @@ namespace DesafioWebsiteInmetrics.Utils
 
             for (int i = 0; i < indexsAcesso.Count; i++)
             {
-                listaMmenu.ElementAt(indexsAcesso[i]).ClickCustom();
+                listaMmenu.ElementAt(indexsAcesso[i]).Click();
 
                 //Se for o ultimo ciclo
                 if (i == indexsAcesso.Count - 1)

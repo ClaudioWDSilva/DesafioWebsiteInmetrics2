@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DesafioWebsiteInmetrics.WebDriverFactory
 {
-    public static class WebDriverFactoryMps
+    public static class WebDriverFactoryTST
     {
         #region :: Declarações 
 
@@ -46,7 +46,7 @@ namespace DesafioWebsiteInmetrics.WebDriverFactory
             if (webDriver != null)
                 return webDriver;
 
-            switch (Utils.EnvironmentMps.RetornarBrowser())
+            switch (Utils.EnvironmentTST.RetornarBrowser())
             {
                 case "chrome":
                     webDriver = new ChromeDriver();

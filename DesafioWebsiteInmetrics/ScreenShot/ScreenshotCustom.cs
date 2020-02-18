@@ -25,7 +25,7 @@ namespace DesafioWebsiteInmetrics.ScreenShot
             get
             {
                 if (_WebDriver is null)
-                    _WebDriver = WebDriverFactory.WebDriverFactoryMps.GetDriver();
+                    _WebDriver = WebDriverFactory.WebDriverFactoryTST.GetDriver();
 
                 return _WebDriver;
             }

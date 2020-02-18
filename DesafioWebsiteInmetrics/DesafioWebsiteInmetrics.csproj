@@ -56,21 +56,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjects\CadastrarTaskPO.cs" />
+    <Compile Include="PageObjects\LoginPO.cs" />
     <Compile Include="PageObjects\PageObjectBase.cs" />
-    <Compile Include="PageObjects\PageObjetct.cs" />
+    <Compile Include="PageObjects\SignUpPO.cs" />
     <Compile Include="ScreenShot\ScreenshotCustom.cs" />
     <Compile Include="ScreenShot\ScreenShotFields.cs" />
-    <Compile Include="Suite\Suite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Suite\SuiteBase.cs" />
-    <Compile Include="Utils\DadosLogin.cs" />
-    <Compile Include="Utils\Decrypt.cs" />
-    <Compile Include="Utils\EnvironmentMps.cs" />
+    <Compile Include="Suite\SuiteLogin.cs" />
+    <Compile Include="Suite\SuiteSignUp.cs" />
+    <Compile Include="Utils\EnvironmentTST.cs" />
     <Compile Include="Utils\Util.cs" />
-    <Compile Include="WebDriverFactory\WebDriverFactoryMps.cs" />
+    <Compile Include="WebDriverFactory\WebDriverFactoryTST.cs" />
     <Compile Include="Wrapper\HtmlControl.cs" />
     <Compile Include="Wrapper\HtmlTable.cs" />
-    <Compile Include="Wrapper\IWebElementCustom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -17,21 +17,13 @@ namespace DesafioWebsiteInmetrics.Wrapper
             this.webElement = webElement;
         }
 
-        public void Click()
-        {
-            webElement.ClickCustom();
-        }
-
+        
         public string Text
         {
             get { return webElement.Text; }
         }
 
-        public void Submit()
-        {
-            webElement.SubmitCustom();
-        }
-
+        
         //All the Find Methods and other methods you want to expose
     }
 
@@ -50,16 +42,6 @@ namespace DesafioWebsiteInmetrics.Wrapper
                 ExecuteScript("arguments[0].setAttribute('value', '" + value + "')",
                     webElement);
             }
-        }
-
-        public void Clear()
-        {
-            webElement.ClearCustom();
-        }
-
-        public void SendKeysCustom(string keys)
-        {
-            webElement.SendKeysCustom(keys);
         }
     }
 
@@ -82,7 +64,7 @@ namespace DesafioWebsiteInmetrics.Wrapper
 
         public void Go()
         {
-            webElement.SendKeysCustom(Keys.Enter);
+            webElement.SendKeys(Keys.Enter);
         }
     }
 }

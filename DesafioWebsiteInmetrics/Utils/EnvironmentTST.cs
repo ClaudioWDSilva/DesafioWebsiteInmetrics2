@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesafioWebsiteInmetrics.Utils
 {
-    public static class EnvironmentMps
+    public static class EnvironmentTST
     {
         public static string Ambiente;
 
@@ -28,13 +28,8 @@ namespace DesafioWebsiteInmetrics.Utils
         /// <returns>String url</returns>
         public static string RetornarUrl()
         {
-            //Suporte
-            Ambiente = "Suporte";
-            return "http://tst04.tjsp.jus.br/RHF/SubstituicaoSuporte/default.aspx";
-
-            //Homol
-            //Ambiente = "Homol";
-            //return "http://tst04.tjsp.jus.br/RHF/Substituicao/default.aspx";
+            Ambiente = "Homol";
+            return "http://www.juliodelima.com.br/taskit/";
         }
 
         /// <summary>
@@ -43,9 +38,9 @@ namespace DesafioWebsiteInmetrics.Utils
         /// <returns>string Navegador</returns>
         internal static string RetornarBrowser()
         {
-            return "ie";
+            //return "ie";
 
-            //return "chrome";
+            return "chrome";
 
             //return "firefox";            
         }
